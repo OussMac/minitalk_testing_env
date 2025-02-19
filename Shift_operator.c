@@ -1,7 +1,5 @@
 #include "mt_lib.h"
 
-
-
 int main(void)
 {
     unsigned char c = 0;
@@ -29,5 +27,14 @@ int main(void)
     printf("shifting left 7 operator <<<< : ");fflush(stdout);
     print_bits(c);
 
+    puts("\n");
+    printf("0 value in bits ==> ");fflush(stdout);
+    c = 0;
+    print_bits(c);
+    c <<= 1; 
+    printf("shifting 0 <<<< : ");fflush(stdout);
+    print_bits(c);
+    printf("the output won't change cuz there are no bits to shift << 00000000 >>.\n");
+    puts("and the value remains 0.");
     return(EXIT_SUCCESS);
 }

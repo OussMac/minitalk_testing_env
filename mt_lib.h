@@ -5,6 +5,8 @@
 #include <stdlib.h> // for malloc and EXIT constants.
 #include <stdio.h>  // for printing output and taking input.
 
+#include <signal.h> // for signal testing.
+
 void    print_bits(unsigned char octet); // for printing bits
 
 #endif // MT_LIB_H
